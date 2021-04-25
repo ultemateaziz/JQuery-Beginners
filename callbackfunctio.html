@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+<body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("square").hide(1000,function(){
+                    alert("This Square with show only once")
+                });
+            });
+        })
+    </script>
+    <style>
+        #square
+        {
+            background: blue;
+            height: 160px;
+            width: 160px;
+            margin-top: 5px;
+            position: absolute;
+        }
+        </style>
+    <button>Hide</button>
+    <div id ="square"></div>
+</body>
+    </head>
+
+</html>
